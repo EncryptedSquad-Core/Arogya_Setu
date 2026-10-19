@@ -1,0 +1,25 @@
+Arogya_Setu_FullStack/
+├── backend/
+│   ├── arogya_setu.db                   # Persistent SQLite Database (WAL mode)
+│   ├── requirements.txt                 # Backend dependencies
+│   └── app/
+│       ├── database.py                  # Feature 1: SQLite Database Schema & Seed Data
+│       ├── ml_engine.py                 # Feature 2: 3-Stage Smart Skin Lens AI Classifier
+│       └── main.py                      # Feature 3: REST API Server (Auth, Scans, Visits, Admin)
+├── frontend/
+│   ├── package.json                     # React + Vite frontend config
+│   ├── index.html                       # Module loader & Tailwind/Leaflet styles
+│   └── src/
+│       ├── api.js                       # Feature 4: Full-Stack REST API Client (:8000)
+│       ├── voiceEngine.js               # Feature 5: 6-Language Single-Voice Assistant
+│       ├── components/
+│       │   ├── HeaderAndNav.jsx         # Feature 6: Top Header, 6-Lang Dropdown, Tabs & Voice Bar
+│       │   ├── SmartSkinLens.jsx        # Feature 7: 260x260 Reticle, Live Camera, Upload & Report
+│       │   ├── HomeAndJournal.jsx       # Feature 8: Hero Banner, 4 KPI Cards & Scans Table
+│       │   ├── Appointments.jsx         # Feature 9: Booking Form + Worker/Admin Edit & Cancel
+│       │   ├── NearbyLocator.jsx        # Feature 10: Live GPS + OpenStreetMap Doctors & Pharmacies
+│       │   ├── RolePortals.jsx          # Feature 11: Worker Referrals & Admin User/Worker Removal
+│       │   └── AuthAndProfileModals.jsx # Feature 12: Gradient Sign-In, Register & Profile Editor
+│       └── App.jsx                      # Main Frontend Application Controller
+├── auto_localhost.py                    # Feature 13: Auto-Localhost Orchestrator (:8000 & :5173)
+└── start_app.bat                        # 1-Click Windows Auto-Localhost Launcher
